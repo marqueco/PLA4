@@ -71,21 +71,26 @@ function llargada(inputMatriu) {
 }
 
 function isItSquare(inputVector) {
-	var matriu = inputVector;
 	var len = inputVector.length;
 	var n = (Math.sqrt(len));
 	console.log(len);
 	console.log(n);
 	if (n === parseInt(n, 10)) {
-	  return "TRUE" + n
+	  return "TRUE" + "<br>" + "Treballem sobre una matriu de " + n + "*" + n;
 	}  else {
-	    return "FALSE" + n
+	    return "FALSE" + "<br>" + "La matriu que has proporcionat no es quadrada";
+	    console.log(n);
 	}
 	if (isItSquare == "FALSE") {
-		break
-	} else { 
-		function sumaDiagonalSq(inputMatriu){
-			sumaDiagonal = (matriu[0][0]) + (matriu[0][1]) + (matriu[0][2]) + (matriu[0][3]) + (matriu[0][4]);
-	}
-	}
+		return "Proporciona una matriu de n*n"
+		} else { 
+		function vectorToMatrix(inputVector){
+			var matriu = new Array(n)
+			var casella = 0;
+			var fila1 = [];
+			
+			for (i = 0; i < (n - 1); i++) {
+				fila1.push(i);
+			}
+			return fila1
 	}
