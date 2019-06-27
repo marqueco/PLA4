@@ -64,35 +64,28 @@ function full2Exercici5() {
 	return matriu[0] + "<br>" + matriu[1] + "<br>" + matriu[2] + "<br>" + matriu[3] + "<br>" + matriu[4] + "<br>" + sumaDiagonal
 }
 
-function full2Exercici6 () {
-	var matriu = [[inputMatriu]];
-	var elementCount = 0;
-	if (matriu.length != matriu.size) {
-		console.log(matriu.length);
-		console.log(matriu.size);
-		return "La matriu no es quadrada. Cal que introdueixis una matriu quadrada.";
-		}
-	} 
-function provaAlbert(inputMatriu) {
-	var matriu = inputMatriu;
-	console.log(inputMatriu);
+
+function llargada(inputMatriu) {    
 	var len = inputMatriu.length;
-	console.log(len);
-	var n = (Math.sqrt(len));
-	console.log(n)
-	if (inputMatriu.length = n*n) {
-		return "TRUE" 
-	} else {
-		return "FALSE"
-	}
+	return len
 }
 
-function arr(inputMatriu) {    
-	var ret = [];
-	for (var i = 0, len = inputMatriu.length; i < len; i++) {
-	root = Math.sqrt(inputMatriu[i]);
-       console.log(root);
-       ret.push(root);
-    }
-    return ret;
-}
+function isItSquare(inputVector) {
+	var matriu = inputVector;
+	var len = inputVector.length;
+	var n = (Math.sqrt(len));
+	console.log(len);
+	console.log(n);
+	if (n === parseInt(n, 10)) {
+	  return "TRUE" + n
+	}  else {
+	    return "FALSE" + n
+	}
+	if (isItSquare == "FALSE") {
+		break
+	} else { 
+		function sumaDiagonalSq(inputMatriu){
+			sumaDiagonal = (matriu[0][0]) + (matriu[0][1]) + (matriu[0][2]) + (matriu[0][3]) + (matriu[0][4]);
+	}
+	}
+	}
