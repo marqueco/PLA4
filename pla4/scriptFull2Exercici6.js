@@ -2,9 +2,6 @@
  * 
  */
 
-
-
-
 function sumaDiagonal(inputVector) {
 	var vector = inputVector;
 	var len = inputVector.length;
