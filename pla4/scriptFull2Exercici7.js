@@ -2,44 +2,55 @@
  * 
  */
 
-function triangleSuperior(vector) {
-	var vector = inputVector;
-	var len = inputVector.length;
-	var n = (Math.sqrt(len));
-	var casella = 0;
-	var comptador = 0;
-	var totalZeros = [];
-	var majorsZero = [];
-	var menorsZero = [];
-		
-	if (n === parseInt(n, 10)) {
-		return "Treballem amb una matriu de " + n + "*" + n + "."
-		
-		for (j = 1; j < n - 1; j++); {
-			for (i = j; i < n - 1; i++);
-			casella =  inputVector[j][i];
-			console.log(casella);
-				if (casella = 0) {
-					comptador++;
-				}
-				totalZeros.push(comptador)
-				}
-				var comptador = 0;
-				if (casella > 0) {
-					comptador++;
-				}
-				majorsZero.push(comptador)
-				}
-				var comptador = 0;
-				if (casella < 0) {
-					comptador++;
-				}
-				menorsZero.push(comptador)
-				}
 
-	return [totalZeros] + "<br>" + [majorsZero] + "<br>" + [menorsZero]
-	}  else {
-		    return "FALSE" + "<br>" + "La matriu que has proporcionat no es quadrada. Proporciona una matriu de n*n.";
-		    console.log(n);
-		 } 
-	}
+function vectorToMatrix(inputVector,n) {
+	var vector = inputVector;
+	var inputN = n;
+	var matriu = new Array(n);
+				
+			for (j = 0; j < n; j++) {
+				var matriuFila = [];
+				for (i = j*n; i < (j+1)*n; i++) {
+				matriuFila.push(inputVector[i]);
+				console.log(matriuFila);
+				}
+				matriu.push(matriuFila);
+				console.log(matriu);
+				}
+				
+			}
+
+function triangleSuperior(matriu) {
+	var n = 5;
+	var totalZeros = 0;
+	var majorsZero = 0;
+	var menorsZero = 0;
+	for (colNum = 1; colNum < n - 2; colNum++) {
+		for (rowNum = 0; rowNum < n - 1; rowNum++) {
+			
+			var comptador = 0;
+			if (matriu[colNum][rowNum] = 0) {
+			comptador++;
+			
+			totalZeros += comptador;
+		
+			} else if (matriu[colNum][rowNum] > 0) {
+			comptador++;
+			
+			majorsZero += comptador;
+			
+			} else { (matriu[colNum][rowNum] < 0)
+			comptador++;
+			
+			menorsZero += comptador;
+			}
+		
+		console.log(totalZeros);
+		console.log(majorsZero);
+		console.log(menorsZero);
+		}
+	
+}
+return "En el triangle superior de la matriu hi apareix el numero 0 un total de " + totalZeros + "<br>" + ". Un total de " + majorsZero + " nombres del triangle assenyalat son majors que 0 i un total de " + menorsZero + " son menors"
+}
+	
