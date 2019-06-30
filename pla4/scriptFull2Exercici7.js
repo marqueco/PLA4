@@ -2,7 +2,6 @@
  * 
  */
 
-
 function triangleSuperior(matriu) {
 	var n = 5;
 	var comptadorZeros = 0;
