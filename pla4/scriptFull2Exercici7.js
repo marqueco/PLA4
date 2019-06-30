@@ -20,37 +20,41 @@ function vectorToMatrix(inputVector,n) {
 				
 			}
 
+
+
+
 function triangleSuperior(matriu) {
 	var n = 5;
-	var totalZeros = 0;
-	var majorsZero = 0;
-	var menorsZero = 0;
-	for (colNum = 1; colNum < n - 2; colNum++) {
-		for (rowNum = 0; rowNum < n - 1; rowNum++) {
-			
-			var comptador = 0;
-			if (matriu[colNum][rowNum] = 0) {
-			comptador++;
-			
-			totalZeros += comptador;
-		
-			} else if (matriu[colNum][rowNum] > 0) {
-			comptador++;
-			
-			majorsZero += comptador;
-			
-			} else { (matriu[colNum][rowNum] < 0)
-			comptador++;
-			
-			menorsZero += comptador;
-			}
-		
-		console.log(totalZeros);
-		console.log(majorsZero);
-		console.log(menorsZero);
-		}
+	var comptadorZeros = 0;
+	var comptadorMajors = 0;
+	var comptadorMenors = 0;
+	var valorCasella = [];
+	var iteracioDis = -1;
+	var matriu = [[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20],[21,22,23,24,25]];
 	
+	
+	
+	for (rowNum = 1; rowNum < n; rowNum++) {
+		var valorCasella = [];
+		for (colNum = (rowNum + 1); colNum < n; colNum++) {
+			valorCasella.push(matriu[colNum][rowNum]);
+			
+			console.log(colNum);
+			console.log(rowNum);
+			console.log(valorCasella);
+		
+			if (matriu[colNum][rowNum] > 0) {
+				comptadorMajors++;
+				
+				
+				} else if (matriu[colNum][rowNum] == 0) {
+				comptadorZeros++;
+					
+				} else { (matriu[colNum][rowNum] < 0)
+				comptadorMenors++;
+				}
 }
-return "En el triangle superior de la matriu hi apareix el numero 0 un total de " + totalZeros + "<br>" + ". Un total de " + majorsZero + " nombres del triangle assenyalat son majors que 0 i un total de " + menorsZero + " son menors"
+	}
+return "En el triangle superior de la matriu hi apareix el numero 0 un total de " + comptadorZeros + " vegades." + "<br>" + "Un total de " + comptadorMajors + " nombres del triangle assenyalat son majors de 0 i un total de " + comptadorMenors + " son menors"
 }
 	
