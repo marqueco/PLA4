@@ -2,7 +2,7 @@
  * 
  */
 
-function sumaDiagonal(inputVector) {
+function full2Exercici6(inputVector) {
 	var vector = inputVector;
 	var len = inputVector.length;
 	var n = (Math.sqrt(len));

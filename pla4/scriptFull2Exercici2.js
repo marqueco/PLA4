@@ -3,9 +3,9 @@
  */
 
 
-function full2Exercici2 () {
+function full2Exercici2 (cadenaCar) {
 	var abecedari = ["a", "b", "c", "ç", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-	var cadenaCar = "lkjndfiobisaospañnjb";
+	var cadenaCar = text;
 	var llistaCars = [];
 	for (var indexLletraBuscada = 0; indexLletraBuscada < abecedari.length; indexLletraBuscada++) {
 		var comptador = 0;

@@ -38,5 +38,5 @@ function triangleSuperior(matriu) {
 		console.log(comptadorZeros);
 		console.log(comptadorMajors);
 		console.log(comptadorMenors);
-return "hola"
+return "Un total de " + comptadorMenors + " nombres de la matriu donada son menors de 0. Un total de " + comptadorMajors + " nombres de la matriu donada son majors de 0, i el nombre 0 apareix a la matriu un total de " + comptadorZeros + " vegades.";
 }

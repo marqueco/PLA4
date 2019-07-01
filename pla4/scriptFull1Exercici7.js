@@ -2,8 +2,8 @@
  * 
  */
 
-function full1Exercici7 () {
-	var cadenaNum = "012344198";
+function full1Exercici7 (cadenaNum) {
+	var cadenaNum = cadena;
 	var llistaNums = [];
 	for (var numeroBuscat = 0; numeroBuscat <= 9; numeroBuscat++) {
 	var comptador = 0;
